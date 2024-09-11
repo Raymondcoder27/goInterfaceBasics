@@ -39,12 +39,12 @@ func printShapeInfo(s shape) {
 	fmt.Printf("Circumeference of %T is %0.2f \n", s, s.circumference())
 }
 
-func main(){
-	var shapes []shape{
+func main() {
+	shapes := []shape{
 		square{length: 13.4},
 		circle{radius: 5.6},
 		circle{radius: 21},
-		square{length: 4}
+		square{length: 4},
 	}
 
 	for _, v := range shapes {
