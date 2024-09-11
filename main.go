@@ -1,6 +1,9 @@
 package main
 
-import "math"
+import (
+	"fmt"
+	"math"
+)
 
 type shape interface {
 	area() float64
@@ -29,4 +32,9 @@ func (c circle) circumference() float64 {
 }
 func (c circle) area() float64 {
 	return 2 * math.Pi * c.radius
+}
+
+func printShapeInfo(s shape) {
+	fmt.Printf("Area of %T is %0.2f \n", s, s.area())
+	fmt.Printf("Circumeference of %T is %0.2f \n", s, s.circumference())
 }
