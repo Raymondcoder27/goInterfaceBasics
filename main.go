@@ -7,3 +7,11 @@ type square struct {
 type circle struct {
 	radius float64
 }
+
+func (s square) circumference() {
+
+}
+
+func (s square) area() {
+
+}
