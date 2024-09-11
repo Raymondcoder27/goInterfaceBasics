@@ -2,6 +2,11 @@ package main
 
 import "math"
 
+type shape interface {
+	area() float64
+	circumference() float64
+}
+
 type square struct {
 	length float64
 }
