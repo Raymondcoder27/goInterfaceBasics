@@ -9,10 +9,10 @@ type circle struct {
 }
 
 // square methods
-func (s square) circumference() {
+func (s square) circumference() float64 {
 	return s.length * 4
 }
 
-func (s square) area() {
+func (s square) area() float64 {
 
 }
