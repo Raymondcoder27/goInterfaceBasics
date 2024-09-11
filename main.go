@@ -1,5 +1,7 @@
 package main
 
+import "math"
+
 type square struct {
 	length float64
 }
@@ -12,7 +14,11 @@ type circle struct {
 func (s square) circumference() float64 {
 	return s.length * 4
 }
-
 func (s square) area() float64 {
 	return s.length * s.length
+}
+
+// circle methods
+func (c circle) circumference() float64 {
+	return math.Pi * c.radius * c.radius
 }
