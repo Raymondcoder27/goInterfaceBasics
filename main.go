@@ -22,3 +22,6 @@ func (s square) area() float64 {
 func (c circle) circumference() float64 {
 	return math.Pi * c.radius * c.radius
 }
+func (c circle) area() float64 {
+	return 2 * math.Pi * c.radius
+}
